@@ -1,0 +1,9 @@
+compiled using 'gcc -o aclemulator aclemulator.c'
+
+usage: ./aclemulator <mode> [...]
+modes: 
+aclemulator {-h, --help}
+aclemulator {-s. --standard} accesscontrollist... packetlist...
+aclemulator {-e, --extended} accesscontrollist... packetlist...
+
+ACL and packet list must match the selected mode format (standard for standard, extended for extended)
