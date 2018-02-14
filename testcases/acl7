@@ -1,0 +1,7 @@
+access-list 103 permit udp 192.168.1.1 0.0.0.0 192.168.4.1 0.0.0.0 eq 161
+access-list 103 permit tcp 192.168.4.1 0.0.0.0 192.168.1.1 0.0.0.0 eq 80
+access-list 103 deny ip 192.168.1.0 0.0.0.255 192.168.4.0 0.0.0.255
+access-list 103 deny ip 192.168.4.0 0.0.0.255 192.168.1.0 0.0.0.255
+access-list 103 permit ip any any
+interface E0
+ip access-group 103 in

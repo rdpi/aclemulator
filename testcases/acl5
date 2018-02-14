@@ -1,0 +1,4 @@
+access-list 102 deny tcp 172.16.4.13 0.0.0.0 172.16.3.0 0.0.0.255 eq 22
+access-list 102 permit ip 172.16.0.0 0.0.255.255 172.16.3.0 0.0.0.255
+interface E0
+ip access-group 102 out

@@ -1,0 +1,4 @@
+access-list 101 deny tcp 192.168.4.1 0.0.0.0 192.168.1.1 0.0.0.0 eq 22
+access-list 101 permit ip any any
+interface E0
+ip access-group 101 in

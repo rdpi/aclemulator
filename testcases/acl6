@@ -1,0 +1,4 @@
+access-list 2 deny 192.168.4.1 0.0.0.0
+access-list 2 permit any
+interface E0 
+ip access-group 2 out

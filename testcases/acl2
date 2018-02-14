@@ -1,0 +1,4 @@
+access-list 2 deny 172.16.4.13 0.0.0.0
+access-list 2 permit 172.16.0.0 0.0.255.255
+interface E0
+ip access-group 2 out
